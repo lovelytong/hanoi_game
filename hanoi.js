@@ -1,4 +1,4 @@
-var floor = 10
+var floor = 2
 async function hanoi(a,b,c,count) {
   if (count > 0) {
      await hanoi(a,c,b,count-1);
