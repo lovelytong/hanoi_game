@@ -1,0 +1,21 @@
+.one {
+  height: 30px;
+  width: 50px;
+  background-color: blue;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 500px;
+}
+
+.inner-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+}
