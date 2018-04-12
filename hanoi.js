@@ -18,7 +18,7 @@ function move(a,b) {
   })
 }
 
-async function button_ready(){
+function button_ready(){
   $("button").removeAttr("disabled");
 }
 
