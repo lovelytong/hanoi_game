@@ -8,11 +8,22 @@
   <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
-<body style="padding-top: 150px;">
+<body>
+  <div class="input-container">
+    <label>请输入汉诺塔层数：</label>
+    <input size="10px">
+    <button>开始游戏</button>
+  </div>
+
+  <div class="container-title">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+  </div>
   <div class="container">
 
     <div class="inner-container" id="a">
-      <div id="one"></div>
+
     </div>
 
     <div class="inner-container" id="b">
@@ -24,6 +35,7 @@
     </div>
 
   </div>
+  <div id="board"></div>
   <script src="hanoi.js"></script>
 </body>
 </html>
