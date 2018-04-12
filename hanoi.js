@@ -19,11 +19,11 @@ function move(a,b) {
 }
 
 function button_ready(){
-  $("button").removeAttr("disabled");
+  $("#clickbutton").removeAttr("disabled");
 }
 
 function play() {
-  $('button').attr("disabled","disabled");
+  $('#clickbutton').attr("disabled","disabled");
   $('#c').empty()
   floor = $('input').val()
   $('#a').prepend('<div id="one" class="one"></div>');
@@ -36,8 +36,6 @@ function play() {
 }
 
 $(document).ready(function () {
-  $('button').click(play)
+  $('#clickbutton').click(play);
+  $('#resetbutton').click(() => {location.reload()})
 })
-
-
-

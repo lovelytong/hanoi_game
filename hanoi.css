@@ -18,7 +18,7 @@ body {
   height: 100%;
 }
 
-.inner-container:before {
+.inner-container:after {
   background: blue;
   content: "";
   height: 60%;
