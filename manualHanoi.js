@@ -12,7 +12,7 @@ function play() {
     }
 
 }
-
+=
 function drag (event) {
     console.log('drag', event)
     event.dataTransfer.setData("Text",event.target.id);

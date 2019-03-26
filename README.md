@@ -3,3 +3,5 @@
 * jquery
 * html+css
 * async await promise
+
+演示地址:https://lovelytong.github.io/hanoi_game/
