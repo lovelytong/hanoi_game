@@ -1,4 +1,5 @@
-var floor = 1
+let floor = 0
+
 async function hanoi(a,b,c,count) {
   if (count > 0) {
      await hanoi(a,c,b,count-1);
@@ -8,9 +9,9 @@ async function hanoi(a,b,c,count) {
 }
 
 function move(a,b) {
-  return new Promise((resolve,reject) => {
-    setTimeout(()=>{
-      x = $('#'+ a).children(":first").remove();
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      let x = $('#'+ a).children(":first").remove();
       $('#'+ b).prepend(x);
       $('#board').text(a + '=>' + b)
       resolve();
@@ -23,15 +24,15 @@ function button_ready(){
 }
 
 function play() {
-  $('#clickbutton').attr("disabled","disabled");
-  $('#c').empty()
+  $('#clickbutton').attr("disabled", "disabled");
+  $('#C').empty()
   floor = $('input').val()
-  $('#a').prepend('<div id="one" class="one"></div>');
-  for (var i = 0; i < floor-1; i++) {
+  $('#A').prepend('<div id="one" class="one"></div>');
+  for (let i = 0; i < floor - 1; i++) {
     $('#one').after('<div class="one"></div>');
     $('#one').next().css('width',(50 + (floor - 1 - i) * 20).toString() + 'px');
   }
-  hanoi('a', 'b', 'c', floor).then(button_ready);
+  hanoi('A', 'B', 'C', floor).then(button_ready);
 
 }
 

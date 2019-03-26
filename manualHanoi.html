@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="hanoi.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="input-container">
+    <label>请输入汉诺塔层数：</label>
+    <input size="10px">
+    <button id="clickbutton">开始游戏</button>
+    <button id="resetbutton">重置</button>
+</div>
+
+<div class="container-title">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+</div>
+<div class="container">
+
+    <div class="inner-container" id="A">
+
+    </div>
+
+    <div class="inner-container" id="B" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    </div>
+
+    <div class="inner-container" id="C" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    </div>
+
+</div>
+<div id="board"></div>
+<script src="manualHanoi.js"></script>
+</body>
+</html>
