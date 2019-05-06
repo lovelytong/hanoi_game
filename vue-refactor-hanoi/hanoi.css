@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+}
+#app {
+  height: 100%;
+}
+.one {
+  height: 30px;
+  background-color: blue;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60%;
+}
+
+.inner-container:after {
+  background: blue;
+  content: "";
+  height: 60%;
+  width: 2px;
+  position: absolute;
+}
+
+.inner-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  border-bottom: 1px solid blue;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-container {
+  padding-top: 30px;
+  font-size: 20px;
+  color: blue;
+  display: flex;
+  justify-content: center;
+
+}
+.input-container input {
+  margin-right: 5px;
+}
+#board{
+  font-size: 26px;
+  text-align: center;
+  color: blue;
+  margin-top: 10px;
+}
+
+
+

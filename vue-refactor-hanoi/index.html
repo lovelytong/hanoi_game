@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="hanoi.css">
+</head>
+
+<body>
+<div id="app">
+    <div class="input-container">
+        <label>请输入汉诺塔层数：</label>
+        <input size="10px" v-model.number="floors">
+        <button @click="play">自动游戏</button>
+        <button @click="handle">手动游戏</button>
+        <button @click="reset">重置</button>
+    </div>
+
+    <div class="container-title">
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+    </div>
+    <div class="container">
+
+        <div class="inner-container">
+            <div class="one"
+                 v-for="(floor, index) in floorsA"
+                 :style="{width:floor*30+50+'px'}"
+            ></div>
+        </div>
+
+        <div class="inner-container">
+            <div class="one"
+                 v-for="(floor, index) in floorsB"
+                 :style="{width:floor*30+50+'px'}"
+            ></div>
+        </div>
+
+        <div class="inner-container">
+            <div class="one"
+                 v-for="(floor, index) in floorsC"
+                 :style="{width:floor*30+50+'px'}"
+            ></div>
+        </div>
+
+    </div>
+    <div id="board"></div>
+</div>
+
+<script src="vue.js"></script>
+<script src="hanoi.js"></script>
+</body>
+</html>
